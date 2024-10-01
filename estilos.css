@@ -1,0 +1,248 @@
+
+.container-fluid {
+  width: 90%;
+  margin: 0% 5%;
+  background-color: #f1f1f1
+}
+.header {
+  width: 100%;
+  border: solid 1px black;
+  background-color: #ecdddd;
+  padding: 20px 0;
+}
+
+#realMadridLogo {
+  height: 80px;
+}
+
+.imgUnderHeader {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#SantiagoBernabeuPersona {
+  flex: 1;
+  min-width: 300px;
+  max-width: 50%;
+  height: auto;
+}
+
+.textBernabeu {
+  flex: 1;
+  padding: 10px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contenedorAsideMain {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-left: 0px;
+  width: 100%;
+}
+
+.aside {
+  flex: 1;
+  background-color: #fafafa;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.navbar {
+  position: relative;
+  z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+}
+
+.aside h3 {
+  text-align: center;
+}
+
+#cr7 {
+  width: 70%;
+  margin: 16% auto;
+  height: auto;
+}
+
+.main {
+  flex: 2;
+  background-color: #fafafa;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.main article {
+  border: 1px solid black;
+  margin-bottom: 15px;
+  padding: 15px;
+}
+
+.imagenesCR7 {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.imagenesCR7 img {
+  width: 260px;
+  height: auto;
+  margin: 0 25px;
+  border: 1px solid black;
+  padding: auto;
+  
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: stretch;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.footer-contact-info,
+.footer-social-media {
+  flex: 1;
+  margin: 0 7%;
+  background-color: #444;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  min-height: 15vh; /* Altura mínima responsive (20% de la altura de la ventana) */
+}
+
+.footer-contact-info h3,
+.footer-social-media h3 {
+  text-align: center;
+}
+
+.footer-contact-info p {
+  margin: 5px 0;
+  text-align: center;
+}
+
+.social-media {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.social-media li {
+  margin: 0 10px;
+}
+
+.social-media a {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icon {
+  width: 2em;
+  height: auto;
+  margin-right: 8px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-media a:hover {
+  text-decoration: underline;
+}
+
+/* Aumenta el tamaño del icono al hacer hover */
+.social-media a:hover .social-icon {
+  transform: scale(1.4);
+}
+
+  /* Estilos específicos para cada red social */
+  #twitter-icon:hover {
+    filter: drop-shadow(0 0 5px #1da1f2);
+  }
+  
+  #facebook-icon:hover {
+    filter: drop-shadow(0 0 5px #1877f2);
+  }
+  
+  #instagram-icon:hover {
+    filter: drop-shadow(0 0 5px #e1306c);
+  }
+  
+  #whatsapp-icon:hover {
+    filter: drop-shadow(0 0 5px #68e130);
+  }
+  .footer-credits {
+    text-align: center; /* Alinea el texto al centro */
+    margin-top: 20px;
+}
+.footer-credits {
+  text-align: center;
+  margin-top: 20px;
+}
+
+ul.social-media a.facebook:hover {
+  color: #3b5998;
+  text-decoration-color: #3b5998;
+}
+
+ul.social-media a.twitter:hover {
+  color: #1da1f2;
+  text-decoration-color: #1da1f2;
+}
+
+ul.social-media a.instagram:hover {
+  color: #e1306c;
+  text-decoration-color: #e1306c;
+}
+ul.social-media a.whatsapp:hover {
+  color: #68e130;
+  text-decoration-color: #68e130;
+}
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 768px) {
+  .contenedorAsideMain {
+      flex-direction: column;
+  }
+
+  .aside,
+  .main {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+
+  #SantiagoBernabeuPersona,
+  .textBernabeu {
+      max-width: 100%;
+      min-width: 200px;
+  }
+
+  .textBernabeu {
+      font-size: 0.9rem;
+  }
+
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer-contact-info,
+  .footer-social-media {
+      width: 90%;
+      margin: 10px 0;
+  }
+}

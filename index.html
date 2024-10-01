@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Tarea3</title>
+</head>
+<body>
+    <div class="container-fluid fondoPrincipal">
+        <header class="header">
+            <img src="imagenes/realmadridLogo.png" alt="Real Madrid Logo" id="realMadridLogo">
+            <div class="imgUnderHeader d-flex flex-wrap align-items-stretch">
+                <img src="imagenes/SantiagoBernabeuPersona.jpg" alt="SantiagoBernabeuPersona" id="SantiagoBernabeuPersona" class="img-fluid">
+                <p class="textBernabeu flex-grow-1"> Santiago Bernabéu de Yeste fue un futbolista, entrenador y dirigente deportivo español, presidente del Real Madrid Club de Fútbol entre 1943 y 1978. Es el presidente que más temporadas ha estado al frente del equipo madrileño, al presidirlo durante 35 años hasta su muerte. Durante ese periodo el club ganó dieciséis ligas españolas, seis copas de España y seis copas de Europa...</p>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">Home</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="data-bs-target">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="https://www.realmadrid.com/es-ES/el-club/historia/leyendas-futbol">Jugadores</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://bernabeu.realmadrid.com/es-ES?itm_campaign=rm_main-menu_estadio">Estadio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://www.realmadrid.com/es-ES/baloncesto/primer-equipo/inicio">Baloncesto</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://shop.realmadrid.com/es-es?itm_campaign=rm_header_shop&utm_source=web&utm_medium=shop-links&utm_campaign=rm_header_shop&utm_content=shop">Tienda</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://www.realmadrid.com/es-ES">Contáctenos</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header> 
+        <div class="row" id="contenedorAsideMain">
+            <aside class="col-md-4 aside">
+                <h3>Máxima leyenda del Club</h3>
+                <img src="imagenes/cr7.jpg" alt="Cristiano Ronaldo" id="cr7" class="img-fluid">
+            </aside>
+            <main class="col-md-8 main">
+                <article id="art1">
+                    <p>
+                        Posición en el campo: Delantero<br>
+                        Partidos jugados: 438 oficiales<br>
+                        Goles marcados: 451<br>
+                        Internacional con Portugal: 154 veces
+                    </p>
+                </article>
+                <article id="art2">
+                    <p>
+                        Cristiano Ronaldo forma parte de la leyenda del Real Madrid y siempre será recordado como uno de los grandes símbolos de su historia...
+                    </p>
+                </article>
+            </main>
+        </div>
+        <div class="imagenesCR7 d-flex justify-content-center flex-wrap">
+            <img src="imagenes/presentacionCr7.jpeg" alt="Presentacion CR7" id="presentacionCr7" class="img-thumbnail">
+            <img src="imagenes/balonD'or.jpg" alt="Balón de oro" id="balonDor" class="img-thumbnail">
+            <img src="imagenes/botaDeOroCR7.jpg" alt="Bota de Oro" id="botaOro" class="img-thumbnail">
+            <img src="imagenes/chilenaCR7.jpg" alt="Chilena CR7" id="Chilena" class="img-thumbnail">
+        </div>
+    </div>
+    <footer class="footer bg-dark text-white">
+        <div class="container footer-container">
+            <div class="footer-contact-info">
+                <h3>Contáctenos</h3>
+                <p><strong>Teléfono:</strong> (+506)8888 8888</p>
+                <p><strong>Email:</strong> contacto@utn.ac.cr</p>
+                <p><strong>Dirección:</strong> San Rafael, Alajuela, Costa Rica</p>
+            </div>
+            <div class="footer-social-media">
+                <h3>Redes Sociales</h3>
+                <ul class="social-media list-unstyled d-flex justify-content-center" id="social.media">
+                    <li><a href="https://www.facebook.com/RealMadrid/?locale=es_LA" class="facebook"><img src="imagenes/facebookLogo.png" alt="Logo de Facebook" class="social-icon" id="facebook-icon">Facebook</a></li>
+                    <li><a href="https://x.com/realmadrid" class="twitter"><img src="imagenes/xLogo.png" alt="Logo de Twitter" class="social-icon" id="twitter-icon">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/realmadrid/" class="instagram"><img src="imagenes/instagramLogo.png" alt="Logo de Instagram" class="social-icon" id="instagram-icon"> Instagram</a></li>
+                    <li><a href="https://whatsapp.com/channel/0029VZzjvDWIt5s5EgORWP0q" class="whatsapp"><img src="imagenes/whatsAppLogo.png" alt="Logo de WhatsApp" class="social-icon"  id="whatsapp-icon">WhatsApp</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-credits text-center">
+            <p>&copy; Derechos Reservados ISW-DAW UTN I-2021</p>
+            <div id="date"></div>
+            <script>
+                document.getElementById("date").innerHTML = new Date().toDateString();
+            </script>
+        </div>
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
